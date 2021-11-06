@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Склад трубной продукции</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<div style="text-align: center;">
+    <h1>Проект MVC: Spring Boot + Thymeleaf + MySQL</h1>
+    <h2 th:utext="${message}">Склад Трубной Продукции</h2>
+    <br>
+    <a th:href="@{/wh/listWh}">Справочник Складов</a>
+    <br>
+    <a th:href="@{/materialList}">Справочник Материалов</a>
+    <br>
+    <a th:href="@{/supplierList}">Справочник Поставщиков</a>
+    <br>
+    <a th:href="@{/warehouseStorage}">Складской Накопитель</a>
+</div>
+</body>
+</html>

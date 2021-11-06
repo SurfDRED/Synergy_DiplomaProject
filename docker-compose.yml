@@ -1,0 +1,21 @@
+version: '3.3'
+
+services:
+
+  db:
+    image: mysql:8.0.26
+    ports:
+      - "6033:3306"
+    volumes:
+      - ./db:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: wh_db
+      MYSQL_USER: gg(&9907
+      MYSQL_PASSWORD: f856fg7
+      MYSQL_ROOT_PASSWORD: g9^g8
+
+
+  adminer:
+    image: adminer
+    ports:
+      - "8081:8080"
